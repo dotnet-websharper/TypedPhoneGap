@@ -31,7 +31,7 @@ Bitbucket: [Mercurial
 repo](http://bitbucket.org/IntelliFactory/typedphonegap)
 
 GitHub: [GitHub
-repo](http://bitbucket.org/intellifactory/typedphonegap)
+repo](http://github.com/intellifactory/TypedPhoneGap)
 
 ## License
 
