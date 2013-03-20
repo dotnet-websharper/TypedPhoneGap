@@ -1,11 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BC742E56-D5E0-43AA-834E-E2C9CB5A38C2}"
-	ProjectSection(SolutionItems) = preProject
-		TypedPhoneGap\TypedPhoneGap.csproj = TypedPhoneGap\TypedPhoneGap.csproj
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypedPhoneGap", "TypedPhoneGap\TypedPhoneGap.csproj", "{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}"
 EndProject
 Global
