@@ -1,0 +1,2 @@
+(bin|obj)/(Debug|Release)
+(.js|.js.map|.suo|.dll|.pdb|~)$
