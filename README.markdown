@@ -17,12 +17,12 @@ programs on this platform.
 ## Status
 
 Currently the bindings are being written from the latest
-documentation, and are incomplete - if you are looking for more
-complete TypeScript PhoneGap bindings please consider using the
+documentation, and are NOT YET TESTED - if you are looking for more
+stable TypeScript PhoneGap bindings please consider using the
 bindings by
 [DefinitelyTyped](http://github.com/borisyankov/DefinitelyTyped)
 
-When the bindings are complete we will consider merging with into the
+When the bindings are tested we will consider merging with into the
 DefinitelyTyped repository.
 
 ## Source
