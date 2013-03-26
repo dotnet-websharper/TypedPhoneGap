@@ -16,18 +16,12 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="index.html" />
-    <Content Include="PhoneGap.d.ts" />
-    <Content Include="PhoneGap.Facade.js">
-      <DependentUpon>PhoneGap.Facade.ts</DependentUpon>
-    </Content>
-    <Content Include="Main.js">
-      <DependentUpon>Main.ts</DependentUpon>
+    <Content Include="TypedPhoneGap.js">
+      <DependentUpon>TypedPhoneGap.ts</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="PhoneGap.Facade.ts" />
-    <TypeScriptCompile Include="Main.ts" />
+    <TypeScriptCompile Include="TypedPhoneGap.ts" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
