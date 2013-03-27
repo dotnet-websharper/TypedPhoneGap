@@ -2,6 +2,10 @@ module TypedPhoneGap {
 
     interface Result { value: any; }
 
+    function hasField(x: any, key: string) {
+        return key in Object(x);
+    }
+
     /// Finds an object at a given path, descending from the given global context.
     /// If found, returns `true` and sets `result.value` to the object.
     /// Otherwise, returns `false`.
@@ -9,7 +13,7 @@ module TypedPhoneGap {
         var context = glob;
         for (var i = 0; i < path.length; i++) {
             var p = path[i];
-            if (context.hasOwnProperty(p)) {
+            if (hasField(context, p)) {
                 context = context[p];
             } else {
                 return false;
