@@ -62,7 +62,7 @@ let BuildDefinitions = T "BuildDefinitions" <| fun () ->
         shellExec {
             Program = "tsc"
             WorkingDirectory = RootDir
-            CommandLine = "TypedPhoneGap/TypedPhoneGap.ts --declaration --out TypedPhoneGap/TypedPhoneGap.d.ts"
+            CommandLine = "TypedPhoneGap/TypedPhoneGap.ts --declaration --out TypedPhoneGap"
             Args = []
         }
     tracefn "Build .d.ts: %i" ok
