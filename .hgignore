@@ -1,4 +1,6 @@
-(.js|.js.map|.suo|.dll|.pdb|~)$
+(.js|.js.map|.suo|.dll|.pdb|.user|~)$
 (bin|obj)/(Debug|Release)
+^\.build
 ^node_modules
+^packages/
 ^pages
