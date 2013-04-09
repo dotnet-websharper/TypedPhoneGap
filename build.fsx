@@ -105,7 +105,7 @@ let BuildPackage = T "BuildPackage" <| fun () ->
         |> Seq.iter (builder.Tags.Add >> ignore)
         new NuGet.PackageDependencySet(B.Net40.ToFrameworkName(), [])
         |> builder.DependencySets.Add
-        for ext in [".js"; ".js.map"; ".min.js"; ".ts"] do
+        for ext in [".js"; ".js.map"; ".min.js"; ".ts"; ".d.ts"] do
             !! (RootDir +/ "TypedPhoneGap" +/ ("*" + ext))
             |> Seq.iter (fun file ->
                 let n = Path.GetFileName(file)
