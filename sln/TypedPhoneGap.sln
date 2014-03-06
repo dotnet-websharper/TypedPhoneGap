@@ -1,12 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypedPhoneGap", "TypedPhoneGap\TypedPhoneGap.csproj", "{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{9F2A1D74-6EC6-4A49-851E-9FD7FB2C8A99}"
-	ProjectSection(SolutionItems) = preProject
-		README.markdown = README.markdown
-	EndProjectSection
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypedPhoneGap", "..\src\TypedPhoneGap.csproj", "{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,8 +11,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}.Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBC1AD8B-2388-4D20-89C5-047C5E9D8BC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
