@@ -1,0 +1,21 @@
+{
+    "name": "typedphonegap",
+    "description": "TypeScript layer for PhoneGap / Apache Cordova 3.4.0",
+    "version": "0.0.1",
+    "scripts": {
+        "prepublish": "node tools/prepublish.js"
+    },
+    "devDependencies": {
+        "typescript": "~0.9.7",
+        "uglify-js": "~2.4.12" 
+    },
+    "files": [
+        "build/TypedPhoneGap.d.ts",
+        "build/TypedPhoneGap.js",
+        "build/TypedPhoneGap.min.js",
+        "tools/cli.js"
+    ],
+    "bin": {
+        "typedphonegap": "tools/cli.js"
+    }
+}
