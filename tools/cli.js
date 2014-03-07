@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var fs = require('fs');
 
 function Task(f) {
@@ -89,7 +87,6 @@ function main(argv) {
     if ((argv.length >= 3) && argv[2] == "install") {
         install();
     } else {
-        console.log(argv);
         usage();
     }
 }
