@@ -1,5 +1,5 @@
 ﻿/// <reference path="Utility.ts" />
-/// <refernece path="Events.ts" />
+/// <reference path="Events.ts" />
 /// <reference path="Plugins/BatteryStatus.ts" />
 /// <reference path="Plugins/Camera.ts" />
 /// <reference path="Plugins/Contacts.ts" />
