@@ -1,6 +1,14 @@
 {
     "name": "typedphonegap",
     "description": "TypeScript layer for PhoneGap / Apache Cordova 3.4.0",
+    "keywords": ["typescript", "phonegap", "cordova"],
+    "homepage": "http://github.com/intellifactory/TypedPhoneGap",
+    "bugs": "http://github.com/intellifactory/TypedPhoneGap/issues",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/intellifactory/TypedPhoneGap.git"
+    },
     "version": "0.0.1",
     "scripts": {
         "prepublish": "node tools/prepublish.js"
