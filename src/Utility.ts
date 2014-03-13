@@ -54,42 +54,38 @@ module TypedPhoneGap.Utility {
         }
     }
 
-    export interface VoidWindowEvent {
+    export interface VoidEvent {
         add(handler: () => void): void;
         remove(handler: () => void): void;
         name: string;
     }
 
-    export function defineVoidWindowEvent(name: string): VoidWindowEvent {
+    export function defineVoidEvent(target: any, name: string): VoidEvent {
         return {
             add: function (f: () => void) {
-                var g: any = f;
-                window.addEventListener(name, g, false);
+                target.addEventListener(name, <any>f, false);
             },
             name: name,
             remove: function (f: () => void) {
-                var g: any = f;
-                window.removeEventListener(name, g, false);
+                target.removeEventListener(name, <any>f, false);
             }
         };
     }
 
-    export interface WindowEvent<T> {
+    export interface TypedEvent<T> {
         add(handler: (evt: T) => void): void;
         remove(handler: (evt: T) => void): void;
         name: string;
     }
 
-    export function defineWindowEvent<T>(name: string): WindowEvent<T> {
+    export function defineTypedEvent<T>(target: any, name: string): TypedEvent<T> {
         return {
             add: function (f: (args: T) => void) {
-                var g: any = f;
-                window.addEventListener(name, g, false);
+                target.addEventListener(name, <any>f, false);
             },
             name: name,
             remove: function (f: (args: T) => void) {
-                var g: any = f;
-                window.removeEventListener(name, g, false);
+                target.removeEventListener(name, <any>f, false);
             }
         };
     }

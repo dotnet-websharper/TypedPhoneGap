@@ -18,10 +18,10 @@
 module TypedPhoneGap.Events {
 
     /// Represents an event as a first-class value.
-    export interface LifeCycleEvent extends Utility.VoidWindowEvent { }
+    export interface LifeCycleEvent extends Utility.VoidEvent { }
 
     function defineEvent(name: string): LifeCycleEvent {
-        return Utility.defineVoidWindowEvent(name);
+        return Utility.defineVoidEvent(document, name);
     }
 
     export var deviceReady = defineEvent("deviceready");

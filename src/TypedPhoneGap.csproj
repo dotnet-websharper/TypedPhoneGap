@@ -25,7 +25,6 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Events.ts" />
-    <TypeScriptCompile Include="Main.ts" />
     <TypeScriptCompile Include="TypedPhoneGap.ts" />
     <TypeScriptCompile Include="Utility.ts" />
     <TypeScriptCompile Include="Plugins\BatteryStatus.ts" />
@@ -43,7 +42,6 @@
     <TypeScriptCompile Include="Plugins\Media.ts" />
     <TypeScriptCompile Include="Plugins\MediaCapture.ts" />
     <TypeScriptCompile Include="Plugins\NetworkInformation.ts" />
-    <TypeScriptCompile Include="Plugins\Notification.ts" />
     <TypeScriptCompile Include="Plugins\SplashScreen.ts" />
     <TypeScriptCompile Include="Plugins\Vibration.ts" />
   </ItemGroup>

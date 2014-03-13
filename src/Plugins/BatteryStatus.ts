@@ -24,7 +24,7 @@ module TypedPhoneGap.BatteryStatus {
     }
 
     /// First-class event object.
-    export interface BatteryEvent extends Utility.WindowEvent<BatteryEventArgs> { }
+    export interface BatteryEvent extends Utility.TypedEvent<BatteryEventArgs> { }
 
     /// Info object passed to battery event handlers
     export interface BatteryEventArgs {
@@ -32,14 +32,18 @@ module TypedPhoneGap.BatteryStatus {
         isPlugged: boolean;
     }
 
+    function defEvent(name) {
+        return Utility.defineTypedEvent<BatteryEventArgs>(window, name);
+    }
+
     var p = Utility.definePlugin<Plugin>({
         id: "org.apache.cordova.battery-status",
         name: "TypedPhoneGap.BatteryStatus",
         def: function () {
             return {
-                batteryCritical: Utility.defineWindowEvent("batterycritical"),
-                batteryLow: Utility.defineWindowEvent("batterylow"),
-                batteryStatus: Utility.defineWindowEvent("batterystatus")
+                batteryCritical: defEvent("batterycritical"),
+                batteryLow: defEvent("batterylow"),
+                batteryStatus: defEvent("batterystatus")
             };
         }
     });

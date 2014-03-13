@@ -50,10 +50,10 @@ module TypedPhoneGap.NetworkInformation {
             }
         });
 
-    export interface NetworkEvent extends Utility.VoidWindowEvent { }
+    export interface NetworkEvent extends Utility.VoidEvent { }
 
     function defineEvent(name: string): NetworkEvent {
-        return Utility.defineVoidWindowEvent(name);
+        return Utility.defineVoidEvent(document, name);
     }
 
     export function getPlugin(): Plugin {
